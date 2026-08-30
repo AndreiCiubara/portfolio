@@ -3,47 +3,273 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrei Ciubara | Portfolio</title>
+  <meta name="description" content="Andrei Vasile Ciubara - Economics, Management and Computer Science Student at Bocconi University">
+  <title>Andrei Vasile Ciubara | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/bb.ico">
+  
+  <!-- Link to your CSS -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts: Inter for a clean, professional, financial-tech aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Andrei Ciubara</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <div class="logo">
+        <a href="#hero">Andrei <span class="highlight">Ciubara</span></a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="hero">
-    <h1>Hi, I'm <span class="highlight">Andrei</span>.</h1>
-    <p>I'm a first-year student at Bocconi University in the Bsc in Economics, Management and Computer Science program.</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a CS student working on projects in C, Python, SQL, and Web Development. Welcome to my portfolio!</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>CS50 Final Project</h3>
-        <p>A description of what your final project does and the tech stack used.</p>
-        <a href="#" target="_blank">View Code</a>
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="greeting">Welcome, I am</p>
+        <h1>Andrei Vasile Ciubara</h1>
+        <h2 class="subtitle">Bsc in Economics, Management, and Computer Science. (in progress)</h2>
+        <p class="hero-description">
+          Bocconi University student bridging the gap between code and capital.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Media Placeholder: Add a professional headshot (suit/tie or smart casual) -->
+        <img src="assets/andrei.jpg" alt="Andrei Vasile Ciubara Headshot" class="profile-img">
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2026 Andrei Ciubara. Built with HTML, CSS, and JS.</p>
+  <!-- ================= ABOUT & MEDIA HIGHLIGHTS ================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            With native proficiency in Italian and Romanian, and fluent English, I thrive in international, multidisciplinary environments. My academic and professional journey is driven by a passion for mathematical modeling and algorithm design.
+          </p>
+          <p>
+            Beyond academia, I maintain a strong discipline through personal interests. I have played football for over 10 years and actively enjoy running. I am also deeply interested in chess, reading non-fiction, and personal finance.
+          </p>
+        </div>
+        <div class="about-media-gallery">
+          <!-- Media Placeholders: Create a small grid of lifestyle/professional images -->
+          <img src="assets/bocconi.jpg" alt="Bocconi University Campus" class="gallery-img">
+          <img src="assets/ft.jpg" alt="Playing Football" class="gallery-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION SECTION ================= -->
+  <section id="education" class="education-section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-date">Expected Graduation: 2029</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Science in Economics, Management and Computer Science</h3>
+            <h4>Bocconi University | Milan, MI</h4>
+            <p>Relevant Coursework: Mathematics, Statistics, Computer Programming, ML, Economics.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2021 - Jun 2026</div>
+          <div class="timeline-content">
+            <h3>Business Economics & Computer Science</h3>
+            <h4>IIS Luca Pacioli | Crema, CR</h4>
+            <p>Relevant Coursework: Business Studies, Economics, Computer Science, Law.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK EXPERIENCE SECTION ================= -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="experience-grid">
+
+        <div class="job-card">
+          <div class="job-header">
+            <h3>Summer Intern</h3>
+            <span class="job-date">May 2025 - Jun 2025</span>
+          </div>
+          <h4>Fondazione Pietro Zoncada | Borghetto Lodigiano, LO</h4>
+          <ul class="job-achievements">
+            <li>Automated reporting processes by developing dynamic models in Microsoft Excel.</li>
+            <li>Reduced operational data processing and reconciliation times by 20%.</li>
+            <li>Managed and reconciled complex financial and health data sets to ensure reporting accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <div class="job-header">
+            <h3>Private Mathematics & Computer Science Tutor</h3>
+            <span class="job-date">Sep 2024 - Present</span>
+          </div>
+          <h4>Self-employed / Volunteer | Crema, CR</h4>
+          <ul class="job-achievements">
+            <li>Mentored students in mathematics and computer science concepts.</li>
+            <li>Improved their test grades by an average of 2 out of 10 points.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section id="projects" class="projects-section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Key Projects & Research</h2>
+      <div class="project-grid">
+
+        <!-- PROJECT 1: Quant Portfolio -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Media Placeholder: Graph/Chart of risk-adjusted returns -->
+            <img src="assets/bsqf.png" alt="Quantitative Portfolio Performance Chart">
+          </div>
+          <div class="project-info">
+            <h3>Quantitative Portfolio Builder</h3>
+            <h4>Bocconi Students for Quantitative Finance (Remote) | Jun 2026 - Present</h4>
+            <p>Programmed a quantitative portfolio allocation tool in Python integrating Markowitz and Black-Litterman models. Optimized risk-adjusted returns and incorporated market-implied prior returns for dynamic asset management.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Quantitative Finance</span>
+              <span class="tag">Financial Modeling</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: StartLab -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Media Placeholder: Resolvo Logo or pitch deck slide -->
+            <img src="assets/sl.jpg" alt="Resolvo Platform Pitch Deck">
+          </div>
+          <div class="project-info">
+            <h3>Resolvo: Business Plan & Technical Architecture</h3>
+            <h4>StartLab Competition | Feb 2026</h4>
+            <p>Captain of a multidisciplinary team of 4 members. Achieved 1st Rank out of 50 teams. Developed a business plan and technical architecture for Resolvo, a digital platform that enables companies finding freelancers to solve technical problems.</p>
+            <div class="project-tags">
+              <span class="tag">Leadership</span>
+              <span class="tag">Business Strategy</span>
+              <span class="tag">System Architecture</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Math Modeling -->
+        <article class="project-card">
+          <div class="project-media">
+            <!-- Media Placeholder: Code snippet or algorithm flowchart -->
+            <img src="assets/unimi.jpg" alt="Combinatorial Algorithm Flowchart">
+          </div>
+          <div class="project-info">
+            <h3>Mathematical Modeling Optimization</h3>
+            <h4>Operations Research Lab | Apr 2026</h4>
+            <p>Built complex mathematical models in collaboration with Prof. Righini (UniMi) to solve real-world problems. Programmed linear and combinatorial algorithms in Gusek to evaluate and optimize scenarios.</p>
+            <div class="project-tags">
+              <span class="tag">Gusek</span>
+              <span class="tag">Operations Research</span>
+              <span class="tag">Linear Algorithms</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-grid">
+        
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>C</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Frameworks</h3>
+          <ul class="skill-list">
+            <li>SQL</li>
+            <li>phpMyAdmin</li>
+            <li>GitHub</li>
+            <li>Cisco Packet Tracer</li>
+            <li>Gusek</li>
+            <li>Microsoft Office Suite</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="contact-section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">Based in Milan, MI 20136.</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <ul class="social-links">
+            <li><strong>Email:</strong> <a href="mailto:andreiciubara1@gmail.com">andreiciubara1@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/AndreiCiubara" target="_blank">github.com/AndreiCiubara</a></li>
+            <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/andreivasileciubara" target="_blank">linkedin.com/in/andreivasileciubara</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Andrei Vasile Ciubara. Built from scratch.</p>
+    </div>
   </footer>
 
+  <!-- Link to your JS -->
   <script src="script.js"></script>
 </body>
 </html>
